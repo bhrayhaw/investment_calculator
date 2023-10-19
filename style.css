@@ -1,0 +1,119 @@
+/* Reset some default styles for consistency */
+body,
+p,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Add a background color and set font styles */
+body {
+    background-image: radial-gradient(#1e2f26, #234030);
+    font-family: Arial, sans-serif;
+}
+
+/* Style the main container */
+.main {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Style the header */
+.main__header {
+    text-align: center;
+}
+
+.main__header img {
+    max-width: 100px;
+}
+
+.main__header h3 {
+    margin-top: 10px;
+    color: #fff;
+}
+
+/* Style the form and its inputs */
+.main__form-controls {
+    background-image: linear-gradient(to bottom, #153b21 40%, #549966);
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.517);
+}
+
+.form-controls__input {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 20px;
+}
+
+.form-controls__input label {
+    display: block;
+    color: #ffffff; /* Change label color */
+    text-transform: uppercase; /* Uppercase labels */
+    margin-bottom: 5px; /* Add some spacing between label and input */
+    font-size: 7px;
+}
+
+/* input{
+    border-style: none;
+} */
+
+.form-controls__input input {
+    padding: 8px;
+    background-color: transparent;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: #fff;
+    outline: none;
+}
+
+/* Style the buttons */
+.form-controls__btn {
+    display: flex;
+    justify-content: center;
+}
+
+.form-controls__btn button {
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="reset"] {
+    background-color: #ccc;
+    color: #333;
+}
+
+button[type="submit"] {
+    background-color: #153b21;
+    color: #fff;
+}
+
+/* Style the table separately */
+.main__table {
+    margin: 20px 0; /* Add space between the form and table */
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead {
+    background-color: #fff;
+    color: #153b21;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: center;
+    font-size: 12px;
+}
+
+td {
+    color: #fff;
+}
+

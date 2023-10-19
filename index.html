@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Investment Calculator</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="main">
+            <!-- investment calculator header -->
+            <div class="main__header">
+                <img
+                    src="./images/investment-crowdfunding-logo-design-new2.jpg"
+                    alt="investment logo"
+                />
+                <h3>Investment Calculator</h3>
+            </div>
+
+            <!-- form for the investment calculator -->
+            <form class="main__form-controls" id="investmentForm">
+                <div class="form-controls__input">
+                    <div>
+                        <label>Current Savings ($)</label>
+                        <input
+                            type="number"
+                            min="0.01"
+                            step="0.01"
+                            name="currentSavings"
+                            id="currentSavingsInput"
+                        />
+                    </div>
+                    <div>
+                        <label>Yearly Savings ($)</label>
+                        <input
+                            type="number"
+                            min="0.01"
+                            step="0.01"
+                            name="yearlySavings"
+                            id="yearlySavingsInput"
+                        />
+                    </div>
+                </div>
+                <div class="form-controls__input">
+                    <div>
+                        <label>Expected Interest (%, per year)</label>
+                        <input
+                            type="number"
+                            min="0.01"
+                            step="0.01"
+                            name="interestRate"
+                            id="interestRateInput"
+                        />
+                    </div>
+                    <div>
+                        <label>Investment Duration (Years)</label>
+                        <input
+                            type="number"
+                            min="1"
+                            step="1"
+                            name="investmentDuration"
+                            id="investmentDurationInput"
+                        />
+                    </div>
+                </div>
+                <div class="form-controls__btn">
+                    <button type="reset">Reset</button>
+                    <button type="button" onclick="calculateInvestment()">
+                        Calculate
+                    </button>
+                </div>
+            </form>
+
+            <!-- Section to show investment content -->
+            <table class="main__table" id="investmentTable">
+                <thead>
+                    <tr>
+                        <th>Year</th>
+                        <th>Total Savings</th>
+                        <th>Interest (Year)</th>
+                        <th>Total Interest</th>
+                        <th>Invested Capital</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- <tr>
+                        <td>1</td>
+                        <td>$11,700.00</td>
+                        <td>$500.00</td>
+                        <td>$500.00</td>
+                        <td>$11,200.00</td>
+                    </tr> -->
+                </tbody>
+            </table>
+        </div>
+
+        <script src="main.js"></script>
+    </body>
+</html>
